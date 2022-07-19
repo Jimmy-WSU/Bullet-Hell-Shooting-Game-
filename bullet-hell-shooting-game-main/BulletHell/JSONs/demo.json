@@ -1,0 +1,569 @@
+{
+  "player": {
+    "entityType": "player",
+    "textureName": "player",
+    "color": "White",
+    "movementPattern": {
+      "movementPatternType": "playerInput",
+      "spawnXPosition": 400,
+      "spawnYPosition": 550,
+      "startXPosition": 400,
+      "startYPosition": 350,
+      "speed": 2
+    },
+    "projectile": {
+      "projectileType": "bullet",
+      "textureName": "Bullet",
+      "color": "Blue",
+      "damage": 5,
+      "healing": 0,
+      "movementPattern": {
+        "movementPatternType": "linear",
+        "xVelocity": 0,
+        "yVelocity": -1,
+        "speed": 4
+      }
+    }
+  },
+  "waves": [
+    {
+      "waveNumber": 1,
+      "waveDuration": 15,
+      "entityGroups": [
+        {
+          "entityAmount": 6,
+          "movementPattern": {
+            "movementPatternType": "backAndForth",
+            "spawnXPosition": [ 400, 400, 200, 600, -400, 1200 ],
+            "spawnYPosition": [ -275, -275, -200, -200, 175, 175 ],
+            "startXPosition": [ 0, 800, 200, 600, 100, 700 ],
+            "startYPosition": [ 50, 50, 100, 100, 175, 175 ],
+            "endXPosition": [ 800, 0, 700, 100, 300, 500 ],
+            "endYPosition": [ 50, 50, 100, 100, 175, 175 ],
+            "speed": 2
+          },
+
+          "entityProperties": {
+            "entityType": "simpleGrunt",
+            "textureName": "hitboxTestEnemy",
+            "color": "Green",
+            "lifeSpan": 30,
+            "projectile": {
+              "projectileType": "bullet",
+              "textureName": "Bullet",
+              "color": "Green",
+              "damage": 5,
+              "healing": 0,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "speed": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "waveNumber": 2,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "lifePiecer",
+            "textureName": "lifePiecer",
+            "color": "White",
+            "lifeSpan": 3,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 150,
+              "startYPosition": 200,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 2
+            },
+            "projectile": {
+              "projectileType": "lifePiece",
+              "textureName": "LifePiece",
+              "color": "Red",
+              "damage": 0,
+              "healing": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "waveNumber": 3,
+      "waveDuration": 15,
+      "entityGroups": [
+        {
+          "entityAmount": 12,
+          "movementPattern": {
+            "movementPatternType": "backAndForth",
+            "spawnXPosition": [ 400, 400, 400, 400, -300, -100, 1100, 900, 400, 400, 400, 400 ],
+            "spawnYPosition": [ -275, -200, -275, -200, 150, 150, 150, 150, -275, -275, -275, -275 ],
+            "startXPosition": [ 50, 50, 750, 750, 100, 300, 700, 500, 600, 200, 800, 0 ],
+            "startYPosition": [ 75, 75, 75, 75, 150, 150, 150, 150, 100, 100, 100, 100 ],
+            "endXPosition": [ 750, 750, 50, 50, 300, 500, 500, 300, 200, 600, 700, 100 ],
+            "endYPosition": [ 75, 75, 75, 75, 150, 150, 150, 150, 100, 100, 100, 100 ],
+            "exitXPosition": [ 400, 400, 400, 400, -300, -100, 1100, 900, 400, 400, 400, 400 ],
+            "exitYPosition": [ -275, -200, -275, -200, 150, 150, 150, 150, -275, -275, -275, -275 ],
+            "speed": 2
+          },
+
+          "entityProperties": {
+            "entityType": "simpleGrunt",
+            "textureName": "hitboxTestEnemy",
+            "color": "Green",
+            "lifeSpan": 30,
+            "projectile": {
+              "projectileType": "bullet",
+              "textureName": "Bullet",
+              "color": "Green",
+              "damage": 5,
+              "healing": 0,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "speed": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 4,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "lifePiecer",
+            "textureName": "lifePiecer",
+            "color": "White",
+            "lifeSpan": 3,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 150,
+              "startYPosition": 200,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 2
+            },
+            "projectile": {
+              "projectileType": "lifePiece",
+              "textureName": "LifePiece",
+              "color": "Red",
+              "damage": 0,
+              "healing": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 5,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 6,
+          "movementPattern": {
+            "movementPatternType": "backAndForth",
+            "speed": 2,
+            "spawnXPosition": [ 400, 400, 900, -100, -400, 1200 ],
+            "spawnYPosition": [ -275, -275, 150, 150, 175, 175 ],
+            "startXPosition": [ 0, 800, 500, 300, 100, 700 ],
+            "startYPosition": [ 50, 50, 150, 150, 175, 175 ],
+            "endXPosition": [ 800, 0, 300, 500, 300, 500 ],
+            "endYPosition": [ 50, 50, 150, 150, 175, 175 ],
+            "exitXPosition": [ 400, 400, 900, -100, -400, 1200 ],
+            "exitYPosition": [ -275, -275, 150, 150, 175, 175 ]
+          },
+
+          "entityProperties": {
+            "entityType": "simpleGrunt",
+            "textureName": "hitboxTestEnemy",
+            "color": "Green",
+            "lifeSpan": 15,
+
+            "projectile": {
+              "projectileType": "bullet",
+              "textureName": "Bullet",
+              "color": "Green",
+              "damage": 5,
+              "healing": 0,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "speed": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 6,
+      "waveDuration": 4,
+      "entityGroups": [
+        {
+          "entityAmount": 3,
+          "movementPattern": {
+            "movementPatternType": "runAndGun",
+            "spawnXPosition": [ -100, -350, -600 ],
+            "spawnYPosition": [ -100, -100, -100 ],
+            "startXPosition": [ 0, 0, 0 ],
+            "startYPosition": [ 150, 150, 150 ],
+            "endXPosition": [ 350, 225, 100 ],
+            "endYPosition": [ 150, 150, 150 ],
+            "exitXPosition": [ 1000, 1000, 1000 ],
+            "exitYPosition": [ -100, -100, -100 ],
+            "speed": 2,
+            "timeBeforeExit": 6.5
+          },
+
+          "entityProperties": {
+            "entityType": "complexGrunt",
+            "textureName": "hitboxTestEnemy",
+            "color": "Yellow",
+            "lifeSpan": 30,
+
+            "projectile": {
+              "projectileType": "bounceBullet",
+              "textureName": "Bullet",
+              "color": "Red",
+              "damage": 5,
+              "healing": 0,
+              "bounceTimes": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "speed": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 7,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "lifePiecer",
+            "textureName": "lifePiecer",
+            "color": "White",
+            "lifeSpan": 3,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 150,
+              "startYPosition": 200,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 2
+            },
+            "projectile": {
+              "projectileType": "lifePiece",
+              "textureName": "LifePiece",
+              "color": "Red",
+              "damage": 0,
+              "healing": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 8,
+      "waveDuration": 4,
+      "entityGroups": [
+        {
+          "entityAmount": 3,
+          "movementPattern": {
+            "movementPatternType": "runAndGun",
+            "spawnXPosition": [ 900, 1150, 1400 ],
+            "spawnYPosition": [ -100, -100, -100 ],
+            "startXPosition": [ 800, 800, 800 ],
+            "startYPosition": [ 150, 150, 150 ],
+            "endXPosition": [ 450, 575, 700 ],
+            "endYPosition": [ 150, 150, 150 ],
+            "exitXPosition": [ -100, -100, -100 ],
+            "exitYPosition": [ -100, -100, -100 ],
+            "speed": 2,
+            "timeBeforeExit": 6.5
+          },
+
+          "entityProperties": {
+            "entityType": "complexGrunt",
+            "textureName": "hitboxTestEnemy",
+            "color": "Yellow",
+            "lifeSpan": 30,
+            "projectile": {
+              "projectileType": "bounceBullet",
+              "textureName": "Bullet",
+              "color": "Red",
+              "damage": 5,
+              "healing": 0,
+              "bounceTimes": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "speed": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 9,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "lifePiecer",
+            "textureName": "lifePiecer",
+            "color": "White",
+            "lifeSpan": 3,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 150,
+              "startYPosition": 200,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 2
+            },
+            "projectile": {
+              "projectileType": "lifePiece",
+              "textureName": "LifePiece",
+              "color": "Red",
+              "damage": 0,
+              "healing": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 10,
+      "waveDuration": 30,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "midBoss",
+            "textureName": "midBoss",
+            "color": "White",
+            "lifeSpan": 30,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 0,
+              "startYPosition": 50,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 5
+            },
+            "projectile": {
+              "projectileType": "bullet",
+              "textureName": "Bullet",
+              "color": "Orange",
+              "damage": 5,
+              "healing": 0,
+              // "bounceTimes": 1,
+              "movementPattern": {
+                "movementPatternType": "semicircle",
+                "xVelocity": 0,
+                "yVelocity": 3,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "endXPosition": 500,
+                "endYPosition": 300,
+                "half1Or2": true,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 11,
+      "waveDuration": 5,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "lifePiecer",
+            "textureName": "lifePiecer",
+            "color": "White",
+            "lifeSpan": 3,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 150,
+              "startYPosition": 200,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 2
+            },
+            "projectile": {
+              "projectileType": "lifePiece",
+              "textureName": "LifePiece",
+              "color": "Red",
+              "damage": 0,
+              "healing": 1,
+              "movementPattern": {
+                "movementPatternType": "linear",
+                "xVelocity": 0,
+                "yVelocity": 1,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 12,
+      "waveDuration": 30,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "finalBoss",
+            "textureName": "finalBoss",
+            "color": "White",
+            "lifeSpan": 30,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 0,
+              "startYPosition": 50,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 5
+            },
+            "projectile": {
+              "projectileType": "bounceBullet",
+              "textureName": "Bullet",
+              "color": "Purple",
+              "damage": 5,
+              "healing": 0,
+              "bounceTimes": 4,
+              "movementPattern": {
+                "movementPatternType": "bounce",
+                "xVelocity": 0,
+                "yVelocity": 2,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "speed": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "waveNumber": 13,
+      "waveDuration": 30,
+      "entityGroups": [
+        {
+          "entityAmount": 1,
+          "entityProperties": {
+            "entityType": "finalBoss",
+            "textureName": "finalBoss",
+            "color": "White",
+            "lifeSpan": 30,
+            "movementPattern": {
+              "movementPatternType": "MoveHorizontally",
+              "spawnXPosition": 400,
+              "spawnYPosition": -275,
+              "startXPosition": 0,
+              "startYPosition": 50,
+              "endXPosition": 800,
+              "endYPosition": 50,
+              "speed": 5
+            },
+            "projectile": {
+              "projectileType": "bullet",
+              "textureName": "Bullet",
+              "color": "Black",
+              "damage": 5,
+              "healing": 0,
+              "movementPattern": {
+                "movementPatternType": "semicircle",
+                "xVelocity": -3,
+                "yVelocity": 5,
+                "startXPosition": 0,
+                "startYPosition": 0,
+                "endXPosition": 400,
+                "endYPosition": 320,
+                "half1Or2": true,
+                "speed": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

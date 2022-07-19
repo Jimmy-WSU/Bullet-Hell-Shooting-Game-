@@ -1,0 +1,27 @@
+Our game will have a new main interface (including interface background, text effects, etc.), there are two buttons in this interface: "Start Game", "Operation Settings". After clicking "Operation Settings", we will enter a configure control page for user to know how to play game. When you click the "Start Game" button, you will enter the game difficulty selection interface. 
+The difficulty of the game can be selected on this interface. Different difficulties correspond to different players' health and the movement speed of enemies in the game. For an example, The player character, starts out with 10 lives on easy difficulty, 5 for medium difficulty, or 1 life on the hard difficulty level. Each difficulty level represents additional score points that can be earned, as well as increases to enemy attack speeds and damage per hit to the player.
+The game will last about 3 minutes. We roughly divide the whole game process into four stages: First Grunt Wave, Mid boss Wave, Second Grunt Wave, Final boss Wave. Each stage will last for 30-60 seconds, if all enemy machines are defeated, waves can be transitioned through in shorter periods. The player has simple linear firing attacks to use, which are by default fired with the spacebar. These attacks can be enhanced with power-ups at various points during gameplay.
+For the Grunt Wave, we want to design two kinds of enemy machines A and B. Their attack is a straight line attack, the attack is evenly distributed projectiles, they will launch in the direction of the player. It is also possible for the player to take collision damage from being bodily hit by enemies. At first Grunt Wave, It will last about 45 seconds, It consists of 3 stages of about 15 seconds each. During first stage, some number of Grunt A will appear. In the second stage there will be more Grunt A than in the first stage, and in the third stage there will be new Grunt B and Grunt A.
+In Mid boss wave, the player faces a mid-boss, with two different attack sequences of 15 seconds each, or until the mid-boss' health reaches the half mark. For attack types and patterns, the mid-boss gets a rope-style attack consisting of medium to large projectiles that radiate outwards from it in slowly twisting shapes. And for the second phase the rope attack will actively spin while moving outward, with a moderately tighter spread of projectiles.
+The second wave of grunts, set at the 1:15 time mark for a pacifist run-through, has more 15 second intervals with increasing difficulty for each. It starts out with a small amount of grunt B, then goes to an increased amount of B with a small amount of A, and finishes out with large amounts of both types A and B. If the enemies are not defeated, they will exit the play area after each sub-wave finishes, making way for the final boss after a maximum wave length of 45 seconds.
+The final boss appears at the 2 minute mark of a pacifist run, and has two sequences of attacks, similar to the mid-boss. This boss starts out with the spinning rope style of attack, and will send the occasional grunt to bodily attack the player. After the half health point, or after 30 seconds have passed, the boss will change attack types to use variations of tightly spaced simple attacks, paired with the occasional large, screen-splitting laser that comes with a short warning just before and does large amounts of damage if the player is hit by it.
+The player wins the game if they have greater than 0 lives left by the end of the final boss fight. Player lives are visible in the game's side panel, and additional lives can be earned as one of the power-up types that can drop throughout gameplay.
+
+
+
+
+
+
+Stage timeline:
+0:00-0:45 - First Grunt Wave
+     0:00-0:15 - Grunt A
+     0:15-0:30 - Increased amount of A
+     0:30-0:45 - Grunt A and grunt B
+0:45-1:15 - Mid boss
+     0:45-1:15  Two kinds of attack by mid boss
+1:15-2:00 - Second Grunt Wave
+     1:15-1:30 - Grunt B
+     1:30-1:45 - Increased amount of B 
+     1:45-2:00 - Grunt A and grunt B
+2:00-3:00 - Final boss
+     2:00-3:00 - Four stages of attack
